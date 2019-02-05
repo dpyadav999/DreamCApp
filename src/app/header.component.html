@@ -1,0 +1,95 @@
+<header>
+    <div class="container-fluid">
+        <!--mobile-menu-->
+        <div class="mobile-header">
+			
+            <div id="main">
+                <span style="cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
+            </div>
+            <a href="Dashboard">
+                <img class="mobile-logo" src="../assets/images/logo.png" alt="Dream24">
+            </a>
+            <div class="user_info">
+                <div id="usernav" class="usersidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="usercloseNav()">&times;</a>
+                    <ul>
+                        <li>
+                            <h6 class="user-name-mob">testuser</h6>
+                        </li>
+                        <li><i class="fas fa-university"></i> Bank Information</li>
+                        <li>
+                            <h6>Available Credit: <span class="user_bal_mob Wallet">0.00</span></h6>
+                            <h6>Credit Limit: <span class="user_bal_mob FreeChip">0.00</span></h6>
+                            <h6>Winnings: <span class="user_bal_mob Chip" style="color: red">0.00</span></h6>
+                            <h6>Net Exposure: <span class="user_bal_mob UserLiability">0</span></h6>
+                        </li>
+						
+						<li><a id="editUsrStake" href="" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-edit"></i>Edit stakes</a></li>
+
+                    </ul>
+                </div>
+                <div id="usermain">
+                    <div class="user_right_tab" style="cursor:pointer" onclick="useropenNav()"> 
+                        <span><i class="fas fa-user"></i></span>
+                        <span class="user_bet_digit " id="Wallet" >0.00</span>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12">			  
+                <Marquee>Welcome to Dream24. | Note: Fake bets ki len den nai hogi. Happy betting. </Marquee> 
+            </div>
+			
+        </div>
+        <!--mobile-menu-->
+        <div class="row desktop-header">
+			<div class="col-md-12" >		  
+                <Marquee>Welcome to Dream24. | Note: Fake bets ki len den nai hogi. Happy betting. </Marquee> 
+            </div>
+            <div class="col-md-2 col-sm-2 logo-area">
+                <div class="logo">
+                    <a href="Dashboard">
+                        <img src="../assets/images/logo.png" alt="Dream24">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-3">
+                <div class="clock">
+                    <span id='ct' ></span>
+                    <time id="dt" timestamp="timestamp" type="simpleDate" class="ng-binding ng-isolate-scope">Jan 25,2019</time>
+                    <time id="tm" timestamp="timestamp" type="time" class="time ng-binding ng-isolate-scope">12:58:40</time>
+                    <span class="ng-binding">+05:30 <i class="apl-icon-angle-down"></i></span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="search_panel">
+                    <div class="form-group">
+                        <div class="icon-addon addon-lg">
+                            <input type="text" placeholder="Search Events" class="form-control" id="email">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 login_panel-sec">
+                <div class="login_detial">
+                    <p class="ng-binding">Logged in as testuser</p>
+                    <p class="last-login ng-binding">Last logged in: 
+                        01/01/1970 05:30</p>
+                </div>
+				<div class="dropdown">
+                    <a href="" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i> Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#bethistory">My Bets</a>
+                        <a class="dropdown-item" href="#profitloss">Profit and Loss</a>
+                        <a class="dropdown-item" href="#Statement">Account Statement</a>
+                        <a class="dropdown-item" href="#Chiphistory">Transfer Statement</a>
+                        <a class="dropdown-item" href="#changepassword">Change Password</a>
+                    </div>
+                    <a href="login.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
